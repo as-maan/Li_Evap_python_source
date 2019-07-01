@@ -1,0 +1,63 @@
+Run Commenced at 2019-07-01 15:02:23.942273
+Number of cores 4
+Number of elements -  440
+Number of Obstructions - 312
+Execution time --- 0.129844903946 seconds ---
+Number of elements with no obstruction - 0 
+Ending run at 2019-07-01 15:02:24.072276
+
+Run Commenced at 2019-07-01 15:02:32.166770
+Number of cores 4
+Number of elements -  440
+Number of Obstructions - 312
+Execution time --- 0.128831863403 seconds ---
+Number of elements with no obstruction - 0 
+Ending run at 2019-07-01 15:02:32.295759
+
+Run Commenced at 2019-07-01 15:04:30.723804
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1537.05324197 seconds ---
+Number of elements with no obstruction - 3218 
+Ending run at 2019-07-01 15:30:07.777346
+
+Run Commenced at 2019-07-01 15:32:45.348321
+Number of cores 2
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2185.96636701 seconds ---
+Number of elements with no obstruction - 3218 
+Ending run at 2019-07-01 16:09:11.314962
+
+Run Commenced at 2019-07-01 16:10:22.608775
+Number of cores 8
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1467.53653383 seconds ---
+Number of elements with no obstruction - 3218 
+Ending run at 2019-07-01 16:34:50.145536
+
+Run Commenced at 2019-07-01 17:50:52.174877
+Number of cores 4
+
+Run Commenced at 2019-07-01 17:51:44.362412
+Number of cores 4
+
+Run Commenced at 2019-07-01 17:52:37.744016
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-01 17:55:57.952231
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-01 17:57:16.632071
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1705.7870395183563 seconds ---
+Number of elements with no obstruction - 3218 
+Ending run at 2019-07-01 18:25:42.419388

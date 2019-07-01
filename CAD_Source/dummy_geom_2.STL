@@ -1,0 +1,30 @@
+solid dummy_geom_2
+   facet normal 1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 8.000000e+000 -2.000000e+000 -1.269322e+000
+         vertex 8.000000e+000 1.806346e+000 -1.269322e+000
+         vertex 8.000000e+000 -2.000000e+000 2.000000e+000
+      endloop
+   endfacet
+   facet normal 1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 8.000000e+000 -2.000000e+000 2.000000e+000
+         vertex 8.000000e+000 1.806346e+000 -1.269322e+000
+         vertex 8.000000e+000 1.806346e+000 2.000000e+000
+      endloop
+   endfacet
+   facet normal 1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 9.000000e+000 0.000000e+000 -1.600705e+000
+         vertex 9.000000e+000 4.221158e+000 -1.600705e+000
+         vertex 9.000000e+000 0.000000e+000 2.000000e+000
+      endloop
+   endfacet
+   facet normal 1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 9.000000e+000 0.000000e+000 2.000000e+000
+         vertex 9.000000e+000 4.221158e+000 -1.600705e+000
+         vertex 9.000000e+000 4.221158e+000 2.000000e+000
+      endloop
+   endfacet
+endsolid
