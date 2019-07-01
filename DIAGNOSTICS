@@ -61,3 +61,11 @@ Number of Obstructions - 312
 Execution time --- 1705.7870395183563 seconds ---
 Number of elements with no obstruction - 3218 
 Ending run at 2019-07-01 18:25:42.419388
+
+Run Commenced at 2019-07-01 18:38:05.574545
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2628.7503085136414 seconds ---
+Number of elements with no obstruction - 5242 
+Ending run at 2019-07-01 19:21:54.325135
