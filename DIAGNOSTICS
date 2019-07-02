@@ -68,4 +68,65 @@ Number of elements -  5872
 Number of Obstructions - 312
 Execution time --- 2628.7503085136414 seconds ---
 Number of elements with no obstruction - 5242 
+comment : normal for both shell obs and rukawat taken using p1p2p3
 Ending run at 2019-07-01 19:21:54.325135
+
+Run Commenced at 2019-07-01 23:26:26.005109
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 989.8944141864777 seconds ---
+Number of elements with no obstruction - 1027 
+comment : normal for both shell obs and rukawat taken using p1p3p2
+Ending run at 2019-07-01 23:42:55.899776
+
+Run Commenced at 2019-07-02 05:28:17.364068
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1398.548820257187 seconds ---
+Number of elements with no obstruction - 3218 
+Ending run at 2019-07-02 05:51:35.913184
+
+Run Commenced at 2019-07-02 05:57:41.544720
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2387.755168199539 seconds ---
+Number of elements with no obstruction - 5242 
+Ending run at 2019-07-02 06:37:29.300148
+
+Run Commenced at 2019-07-02 06:49:24.348469
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2488.2936782836914 seconds ---
+Number of elements with no obstruction - 5242 
+Ending run at 2019-07-02 07:30:52.642402
+
+Run Commenced at 2019-07-02 07:56:00.822961
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2519.885151863098 seconds ---
+Number of elements with no obstruction - 5242 
+Ending run at 2019-07-02 08:38:00.708376
+
+Run Commenced at 2019-07-02 08:40:52.365077
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2171.965422153473 seconds ---
+Number of elements with no obstruction - 4400 
+Ending run at 2019-07-02 09:17:04.330895
+
+Run Commenced at 2019-07-02 09:26:24.831848
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1873.948050737381 seconds ---
+Number of elements with no obstruction - 3713
+comment : this seems to be the real deal, p3p2p1 in both ruk and shell obs and cond0 is np.dot(-N_rwat,d) 
+Ending run at 2019-07-02 09:57:38.780283
+
+

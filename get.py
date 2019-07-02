@@ -49,12 +49,13 @@ def rwatQ(N_rwat,R,c_rwat):
     p_Q = R['p_s'] + t_Q*R['d']
     return {'p_Q':p_Q, 't_Q':t_Q}       
 
-def obstruction(rwat,Q,t,N_rwat):
+def obstruction(rwat,Q,t,N_rwat,d):
+    cond0 = np.dot(-N_rwat,d)
     cond1 = np.dot(np.cross((rwat['p2'] - rwat['p1']),(Q['p_Q']-rwat['p1'])),N_rwat)
     cond2 = np.dot(np.cross((rwat['p3'] - rwat['p2']),(Q['p_Q']-rwat['p2'])),N_rwat)
     cond3 = np.dot(np.cross((rwat['p1'] - rwat['p3']),(Q['p_Q']-rwat['p3'])),N_rwat)
     cond4 = t - Q['t_Q'] 
-    cond  = [cond1,cond2,cond3,cond4]
+    cond  = [cond0,cond1,cond2,cond3,cond4]
     if all(i>=0 for i in cond) == True:
         OBS = True
     else:

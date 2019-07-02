@@ -52,7 +52,7 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                                 # Find Q, the point along ray that lies on the plane of rwat
                 Q = get.rwatQ(N_rwat,ray,c_rwat)
                                 # Check if Q belongs to rwat and if yes is t_Q < t
-                OBS = get.obstruction(rwat,Q,ray['t'],N_rwat)          
+                OBS = get.obstruction(rwat,Q,ray['t'],N_rwat,ray['d'])          
                 if OBS == True:
                                 #print("Obstruction found in rukawat",j,ii)
                     break
@@ -68,7 +68,7 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                     c_rwat = get.center(rwat['p1'],rwat['p2'],rwat['p3'])
                     N_rwat = get.normal(rwat['p1'],rwat['p3'],rwat['p2'])
                     Q = get.rwatQ(N_rwat,ray,c_rwat)
-                    OBS = get.obstruction(rwat,Q,ray['t'],N_rwat)            
+                    OBS = get.obstruction(rwat,Q,ray['t'],N_rwat,ray['d'])            
                     if OBS == True:
                                     #print("Obstruction found in SHELLS break",ii,k)
                         break
@@ -82,10 +82,8 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                 elem_noruk_t = np.append(elem_noruk_t,ray['t'])
     return {'i':elem_noruk, 'thetas':thetas, 't':elem_noruk_t}       
     
-    
 # import shells, obstruction and source
     
-
 diagnostics = open("DIAGNOSTICS","a+")
 input = sys.argv[1]
 num_cores = int(sys.argv[2])
@@ -103,9 +101,6 @@ src = get.source()
 
 elem = np.size(shells.areas)        # total number of shell elements
 elem_r = np.size(rukawat.areas)     # number of elements in rukawat
-
-
-
 
 start = time.time()
 
