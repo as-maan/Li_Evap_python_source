@@ -48,7 +48,7 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                                 # get center of rukawat element
                 c_rwat = get.center(rwat['p1'],rwat['p2'],rwat['p3'])
                                 # get normal to obstruction/rukawat
-                N_rwat = get.normal(rwat['p1'],rwat['p2'],rwat['p3'])
+                N_rwat = get.normal(rwat['p1'],rwat['p3'],rwat['p2'])
                                 # Find Q, the point along ray that lies on the plane of rwat
                 Q = get.rwatQ(N_rwat,ray,c_rwat)
                                 # Check if Q belongs to rwat and if yes is t_Q < t
@@ -66,7 +66,7 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                 for k in [u for u in range(0,elem) if u!=ii]:
                     rwat = get.p(shells.x[k,:],shells.y[k,:],shells.z[k,:])
                     c_rwat = get.center(rwat['p1'],rwat['p2'],rwat['p3'])
-                    N_rwat = get.normal(rwat['p1'],rwat['p2'],rwat['p3'])
+                    N_rwat = get.normal(rwat['p1'],rwat['p3'],rwat['p2'])
                     Q = get.rwatQ(N_rwat,ray,c_rwat)
                     OBS = get.obstruction(rwat,Q,ray['t'],N_rwat)            
                     if OBS == True:
