@@ -129,4 +129,13 @@ Number of elements with no obstruction - 3713
 comment : this seems to be the real deal, p3p2p1 in both ruk and shell obs and cond0 is np.dot(-N_rwat,d) 
 Ending run at 2019-07-02 09:57:38.780283
 
+Run Commenced at 2019-07-09 01:37:15.053636
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1886.65863895 seconds ---
+Number of elements with no obstruction - 3713 
+comment: First successful MPI implementation on Laptop
+Ending run at 2019-07-09 02:08:41.712490
+
 
