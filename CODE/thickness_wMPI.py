@@ -85,7 +85,7 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                         n = n+1
                                 
             if OBS == False:
-                #print "no obstruction found in element",ii,m,n 
+                print("no obstruction found in element",ii,m,n) 
                 elem_noruk = np.append(elem_noruk,ii)
                 thetas = np.append(thetas,ray_angle)
                 elem_noruk_t = np.append(elem_noruk_t,ray['t'])
@@ -134,7 +134,7 @@ OP = calc_OBS_para(shells,rukawat,src,np.size(shells.areas),elem_r,OUTPUT['i'],O
 
 # Barrier till all processes finish
 comm.barrier()
-print "Obstruction Calc barrier crossed by process %s" %rank
+print("Obstruction Calc barrier crossed by process %s" %rank)
 
 """
 OUTPUT HANDLING 
@@ -144,14 +144,14 @@ OUTPUT HANDLING
 if rank != 0:
 	req = comm.isend(OP, dest=0,tag=rank)
 	req.wait()
-print "OP Send barrier crossed by process %s" %rank
+print("OP Send barrier crossed by process %s" %rank)
 # At master piece data together
 if rank == 0:
 	OUTPUT = dict(i=np.array([]),thetas=np.array([]),t = np.array([]))
 	OUTPUT['i'] = np.append(OUTPUT['i'],OP['i'])
 	OUTPUT['thetas'] = np.append(OUTPUT['thetas'],OP['thetas'])
 	OUTPUT['t'] = np.append(OUTPUT['t'],OP['t'])
-	print "Output dictionary initialized by process %s" %rank
+	print("Output dictionary initialized by process %s" %rank)
 	for i in range(1,nprocs):
 		req = comm.irecv(source=i,tag=i)
 		OP_wrkr = req.wait()
@@ -168,7 +168,7 @@ if rank == 0:
 	diagnostics.write("Ending run at "+str((datetime.datetime.now()))+"\r\n")
 	diagnostics.close()
 	t_i = t_qcm*np.cos(OUTPUT['thetas']*np.pi/180)*(r_qcm**2)/(OUTPUT['t']**2)
-	print "thickness acquired"
+	print("thickness acquired - Ready to plot")
 
 # PLOT
 	i = 0
@@ -177,13 +177,13 @@ if rank == 0:
 	#for e in range(0,np.size(shells.areas)):
 	for e in OUTPUT['i']:
    	 # get the element with no obstruction
-    		e = int(e)
-    		x_p = list(shells.x[e,:])
-   		y_p = list(shells.y[e,:])
-    		z_p = list(shells.z[e,:])
+		e = int(e)
+		x_p = list(shells.x[e,:])
+		y_p = list(shells.y[e,:])
+		z_p = list(shells.z[e,:])
 #    get.patch(ax,x_p,y_p,z_p,1,0,1)
-    		get.patch(ax,x_p,y_p,z_p,t_i[i],np.min(t_i),np.max(t_i))
-    		i = i+1
+		get.patch(ax,x_p,y_p,z_p,t_i[i],np.min(t_i),np.max(t_i))
+		i = i+1
 	ax.scatter(src['NO'][0],src['NO'][1],src['NO'][2],s=50,c='r')
 	get.view(ax,3)
 	ax.set_zlim(-400,400)
