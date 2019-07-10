@@ -138,4 +138,34 @@ Number of elements with no obstruction - 3713
 comment: First successful MPI implementation on Laptop
 Ending run at 2019-07-09 02:08:41.712490
 
+-----------------------------------------------------------------------------------------------------------
+
+Run Commenced at 2019-07-09 20:42:23.895507
+Hostname - sunfire02.pppl.gov
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 3944.6137793064117 seconds ---
+Number of elements with no obstruction - 3713 
+Ending run at 2019-07-09 21:48:08.509693
+
+Run Commenced at 2019-07-09 21:31:13.731457
+Hostname - sunfire08.pppl.gov
+Number of cores 8
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 2913.64981508255 seconds ---
+Number of elements with no obstruction - 3713 
+Ending run at 2019-07-09 22:19:47.381826
+
+Run Commenced at 2019-07-09 22:40:00.993617
+Hostname - dawson132.pppl.gov
+Number of cores 16
+Number of elements -  5872
+Number of Obstructions - 312
+Execution time --- 1980.6728463172913 seconds ---
+Number of elements with no obstruction - 3713
+comment: first successful slurm implementation; trying again with no print and plot 
+Ending run at 2019-07-09 23:13:01.667222
+
 

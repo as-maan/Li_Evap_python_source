@@ -168,7 +168,7 @@ if rank == 0:
 	diagnostics.write("Ending run at "+str((datetime.datetime.now()))+"\r\n")
 	diagnostics.close()
 	t_i = t_qcm*np.cos(OUTPUT['thetas']*np.pi/180)*(r_qcm**2)/(OUTPUT['t']**2)
-	print "thickness acquired"
+	print("thickness acquired - Ready to plot")
 
 # PLOT
 	i = 0
@@ -177,13 +177,13 @@ if rank == 0:
 	#for e in range(0,np.size(shells.areas)):
 	for e in OUTPUT['i']:
    	 # get the element with no obstruction
-    		e = int(e)
-    		x_p = list(shells.x[e,:])
-   		y_p = list(shells.y[e,:])
-    		z_p = list(shells.z[e,:])
+		e = int(e)
+		x_p = list(shells.x[e,:])
+		y_p = list(shells.y[e,:])
+		z_p = list(shells.z[e,:])
 #    get.patch(ax,x_p,y_p,z_p,1,0,1)
-    		get.patch(ax,x_p,y_p,z_p,t_i[i],np.min(t_i),np.max(t_i))
-    		i = i+1
+		get.patch(ax,x_p,y_p,z_p,t_i[i],np.min(t_i),np.max(t_i))
+		i = i+1
 	ax.scatter(src['NO'][0],src['NO'][1],src['NO'][2],s=50,c='r')
 	get.view(ax,3)
 	ax.set_zlim(-400,400)
