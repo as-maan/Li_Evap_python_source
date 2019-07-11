@@ -139,3 +139,289 @@ comment: First successful MPI implementation on Laptop
 Ending run at 2019-07-09 02:08:41.712490
 
 
+
+Run Commenced at 2019-07-10 16:49:04.298576
+Number of cores 4
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 21.0149159431 seconds ---
+Number of elements with no obstruction - 4 
+Ending run at 2019-07-10 16:49:25.313616
+
+Run Commenced at 2019-07-10 16:50:14.178182
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 63.0193309784 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 16:51:17.197614
+
+Run Commenced at 2019-07-10 16:59:28.783308
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:01:04.888898
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:05:04.416504
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:05:27.167899
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:07:47.208506
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 50.7453188896 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 17:08:37.953938
+
+Run Commenced at 2019-07-10 17:12:49.251680
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:16:00.274516
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:20:50.612174
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 49.3304028511 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 17:21:39.942683
+
+Run Commenced at 2019-07-10 17:33:58.589021
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 50.2360889912 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 17:34:48.825225
+
+Run Commenced at 2019-07-10 17:49:48.316058
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:50:13.115072
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:51:29.778145
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:52:21.645854
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 42.8032851219 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 17:53:04.449252
+
+Run Commenced at 2019-07-10 17:55:33.713218
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:56:01.056440
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:58:40.150163
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 17:59:25.926217
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 38.1784191132 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:00:04.104742
+
+Run Commenced at 2019-07-10 18:06:59.271647
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 35.8363511562 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:07:35.108106
+
+Run Commenced at 2019-07-10 18:31:21.609151
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 18.4293069839 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:31:40.038565
+
+Run Commenced at 2019-07-10 18:35:45.845328
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 19.8331980705 seconds ---
+Number of elements with no obstruction - 9 
+Ending run at 2019-07-10 18:36:05.678633
+
+Run Commenced at 2019-07-10 18:37:32.117593
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 0.0837349891663 seconds ---
+Number of elements with no obstruction - 0 
+Ending run at 2019-07-10 18:37:32.201453
+
+Run Commenced at 2019-07-10 18:37:49.671734
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 0.0824091434479 seconds ---
+Number of elements with no obstruction - 0 
+Ending run at 2019-07-10 18:37:49.754253
+
+Run Commenced at 2019-07-10 18:38:18.482370
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 18.8774080276 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:38:37.359883
+
+Run Commenced at 2019-07-10 18:46:59.424498
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 18:47:30.311164
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 25.0370249748 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:47:55.348293
+
+Run Commenced at 2019-07-10 18:48:33.110649
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 18.0796561241 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:48:51.190413
+
+Run Commenced at 2019-07-10 18:49:54.999638
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 18.2897491455 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:50:13.289497
+
+Run Commenced at 2019-07-10 18:54:00.928987
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+
+Run Commenced at 2019-07-10 18:56:30.345647
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 3.26040410995 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 18:56:33.606153
+
+Run Commenced at 2019-07-10 18:57:04.445502
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 985.476261854 seconds ---
+Number of elements with no obstruction - 3713 
+Ending run at 2019-07-10 19:13:29.922005
+
+Run Commenced at 2019-07-10 19:23:39.051540
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 1092.8438201 seconds ---
+Number of elements with no obstruction - 3713 
+Ending run at 2019-07-10 19:41:51.895574
+
+Run Commenced at 2019-07-10 19:45:05.199943
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 18.0217590332 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 19:45:23.221806
+
+Run Commenced at 2019-07-10 20:06:53.103359
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 17.9392359257 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 20:07:11.042697
+
+Run Commenced at 2019-07-10 20:10:01.838014
+Number of cores 1
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 16.3479218483 seconds ---
+Number of elements with no obstruction - 5 
+Ending run at 2019-07-10 20:10:18.186039
+
+Run Commenced at 2019-07-10 20:12:34.435597
+Number of cores 4
+Number of elements -  10
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 0.766450881958 seconds ---
+Number of elements with no obstruction - 4 
+Ending run at 2019-07-10 20:12:35.202147
+
+Run Commenced at 2019-07-10 20:13:27.264579
+Number of cores 4
+Number of elements -  5872
+Number of Obstructions - 312
+Hostname - NE-UTK-067
+Execution time --- 817.78252697 seconds ---
+Number of elements with no obstruction - 3713 
+Ending run at 2019-07-10 20:27:05.047340

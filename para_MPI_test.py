@@ -28,23 +28,24 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
     for ii in range(i*n,(i+1)*n):
                     # replace this with elem
                     # get an element p
-        p = get.p(shells.x[ii,:],shells.y[ii,:],shells.z[ii,:])
+        p1,p2,p3 = get.p(shells.x[ii,:],shells.y[ii,:],shells.z[ii,:])
                         
                         # get coordinates of center of the element
-        c_p = get.center(p['p1'],p['p2'],p['p3'])
+        c_p = get.center(p1,p2,p3)
                         
                         # Get Normal to element
-        N_p = get.normal(p['p1'],p['p2'],p['p3'])
+        N_p = get.normal(p1,p2,p3)
+        
                         
                         # get ray from source
                         
                         #ray = get.sourcevector(src['NO'],c_p)
-        ray = get.sourcevector(src['NO'],c_p)
+        p_s,d,t = get.sourcevector(src['NO'],c_p)
                         
                         # get angle between ray and element
         m = 0
         n = 0
-        ray_angle = get.angle(N_p,ray['d'])
+        ray_angle = get.angle(N_p,d)
                         # ray angle less than 90 implies source faces the face
         if ray_angle < 90:  
                             
@@ -53,15 +54,15 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                     #        print('now checking against all rukawat', i)
             for j in range(0,elem_r):
                                 # get an element from rukawat
-                rwat = get.p(rukawat.x[j,:],rukawat.y[j,:],rukawat.z[j,:])
+                rwat1,rwat2,rwat3 = get.p(rukawat.x[j,:],rukawat.y[j,:],rukawat.z[j,:])
                                 # get center of rukawat element
-                c_rwat = get.center(rwat['p1'],rwat['p2'],rwat['p3'])
+                c_rwat = get.center(rwat1,rwat2,rwat3)
                                 # get normal to obstruction/rukawat
-                N_rwat = get.normal(rwat['p1'],rwat['p3'],rwat['p2'])
+                N_rwat = get.normal(rwat1,rwat2,rwat3)
                                 # Find Q, the point along ray that lies on the plane of rwat
-                Q = get.rwatQ(N_rwat,ray,c_rwat)
+                p_Q,t_Q = get.rwatQ(N_rwat,p_s,d,t,c_rwat)
                                 # Check if Q belongs to rwat and if yes is t_Q < t
-                OBS = get.obstruction(rwat,Q,ray['t'],N_rwat,ray['d'])          
+                OBS = get.obstruction(rwat1,rwat2,rwat3,p_Q,t_Q,t,N_rwat,d)          
                 if OBS == True:
                                 #print("Obstruction found in rukawat",j,ii)
                     break
@@ -73,11 +74,11 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
             if OBS == False:
                     #            print('now checking against all shell elements', i)   
                 for k in [u for u in range(0,elem) if u!=ii]:
-                    rwat = get.p(shells.x[k,:],shells.y[k,:],shells.z[k,:])
-                    c_rwat = get.center(rwat['p1'],rwat['p2'],rwat['p3'])
-                    N_rwat = get.normal(rwat['p1'],rwat['p3'],rwat['p2'])
-                    Q = get.rwatQ(N_rwat,ray,c_rwat)
-                    OBS = get.obstruction(rwat,Q,ray['t'],N_rwat,ray['d'])            
+                    rwat1,rwat2,rwat3 = get.p(shells.x[k,:],shells.y[k,:],shells.z[k,:])
+                    c_rwat = get.center(rwat1,rwat2,rwat3)
+                    N_rwat = get.normal(rwat1,rwat2,rwat3)
+                    p_Q,t_Q = get.rwatQ(N_rwat,p_s,d,t,c_rwat)
+                    OBS = get.obstruction(rwat1,rwat2,rwat3,p_Q,t_Q,t,N_rwat,d)            
                     if OBS == True:
                                     #print("Obstruction found in SHELLS break",ii,k)
                         break
@@ -88,7 +89,7 @@ def calc_OBS_para(shells,rukawat,src,elem,elem_r,elem_noruk,elem_noruk_t,thetas,
                 print "no obstruction found in element",ii,m,n 
                 elem_noruk = np.append(elem_noruk,ii)
                 thetas = np.append(thetas,ray_angle)
-                elem_noruk_t = np.append(elem_noruk_t,ray['t'])
+                elem_noruk_t = np.append(elem_noruk_t,t)
     return {'i':elem_noruk, 'thetas':thetas, 't':elem_noruk_t}       
     
 
